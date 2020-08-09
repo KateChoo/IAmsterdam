@@ -155,7 +155,7 @@
   }
   .section__title {
   /*   margin-top: 3em; */
-    padding-top: 3em;
+    padding-top: 1em;
     color: var(--clr-accent);
     text-transform: uppercase;
   }
@@ -367,9 +367,20 @@ text-decoration: none;
   .section3__footer {
     color: var(--clr-accent);
   }
+  /* .section2__footer a, */
   footer a{
     color: var(--clr-accent);
-    padding: 5em auto;
+    margin: 5em auto;
+  }
+  footer {
+    /* grid-column: -1/-2;
+    grid-row: 5/6; */
+    /* writing-mode: vertical-rl;
+    text-orientation: sideways; */
+    grid-column: 3/4;
+    grid-row: 3/4;
+    align-self: end;
+    justify-self: end;
   }
 /*======================
   
