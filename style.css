@@ -1,4 +1,38 @@
-/*=====================
+/*===================
+  SECTION 3 style
+====================*/
+.daytrip {
+  background: var(--clr-dark);
+  color: var(--clr-light)
+}
+.wrap p {
+  font-size: var(--fs-body);
+  line-height: 1.5;
+}
+/*======================
+    Footer
+  ========================*/
+  .header__footer,
+  .section__nav__footer,
+  .section2__footer,
+  .section3__footer {
+    color: var(--clr-accent);
+  }
+  /* .section2__footer a, */
+  footer a{
+    color: var(--clr-accent);
+    margin: 5em auto;
+  }
+  footer {
+    /* grid-column: -1/-2;
+    grid-row: 5/6; */
+    /* writing-mode: vertical-rl;
+    text-orientation: sideways; */
+    grid-column: 3/4;
+    grid-row: 3/4;
+    align-self: end;
+    justify-self: end;
+  }
 /*=====================
     HEADER
 =======================*/
@@ -108,12 +142,12 @@
     animation: amsterdam 3s steps(12);
     white-space: nowrap; /*同一條線不分行*/
   /*   width: 22ch;  取消這個就不會突然暴衝往前*/
-    color:var(--clr-light);
+    color:var(--clr-accent);
     font-weight: var(--fw-bold);
     font-size: var(--fs-h1);
   }
   .amsterdam span {
-    color: var(--clr-accent);
+    color: var(--clr-light);
   }
   @keyframes amsterdam {
     0% {
@@ -206,7 +240,7 @@
     font-size: var(--fs-h3);
   }
 
-@media (max-width: 800px){
+/* @media (max-width: 800px){ */
   .section__tab-content {
     max-height: 0;
     overflow: hidden;
@@ -216,12 +250,7 @@
     max-height: 100%; 
     max-width: 100%;
   }
-  /* .section__tab input:focus + label, 
-  .section__tab label:hover{
-    letter-spacing: 1px;
-    transition: .55s;
-  }   */
-}
+/*===========================*/
 .section__tab input:focus + label, 
 .section__tab label:hover{
   letter-spacing: 1px;
@@ -246,7 +275,8 @@ text-decoration: none;
 /*大螢幕都集中在中間*/
 .daytrip__title,
 .giethoorn,
-.wrap {
+.wrap,
+.pCredit {
   grid-column: 2/3;
 }
 .flex {
@@ -269,6 +299,11 @@ text-decoration: none;
   font-size: var(--fs-body);
   font-weight: var(--fw-bold);
 }
+.giethouse,
+.gietriver,
+.gietdog {
+  max-width: 100%;
+}
 @media screen and (min-width: 800px) {
   .daytrip {
     grid-template-columns: 5em minmax(1fr auto) 5em;
@@ -290,12 +325,18 @@ text-decoration: none;
     margin-bottom: 1em;
     margin-right: 2em;
   }
-  .giethoorn {
+  .giethoorn,
+  .pCredit {
     width: 100%;
 /*     heigh: 90%; */
     grid-column: 2/3;
     grid-row: 2/3;
     object-fit: cover;
+  }
+  .pCredit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   .wrap {
     grid-column: 2/3;
@@ -304,6 +345,7 @@ text-decoration: none;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-column-gap: 2em;
+    grid-row-gap: 1em;
   }
   .quote, li {
     display: flex;
@@ -323,65 +365,34 @@ text-decoration: none;
     grid-row: 3/4;
   }
   .one {
-    grid-column: 1/2;
-    grid-row: 3/4;
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
   .two{
     grid-column: 2/3;
     grid-row: 1/2;
   }
   
-  .three {
+  .three,
+  .giethouse {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  .four {
+  .four,
+  .gietriver {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 2/3;
   }
-  .five {
+  .five,
+  .gietdog {
     grid-column: 3/4;
     grid-row: 2/3;
   }
   .six {
     grid-column: 3/4;
+    grid-row: 1/2;
   }
 }
-/*===================
-  SECTION 3 style
-====================*/
-.daytrip {
-  background: var(--clr-dark);
-  color: var(--clr-light)
-}
-.wrap p {
-  font-size: var(--fs-body);
-  line-height: 1.5;
-}
-/*======================
-    Footer
-  ========================*/
-  .header__footer,
-  .section__nav__footer,
-  .section2__footer,
-  .section3__footer {
-    color: var(--clr-accent);
-  }
-  /* .section2__footer a, */
-  footer a{
-    color: var(--clr-accent);
-    margin: 5em auto;
-  }
-  footer {
-    /* grid-column: -1/-2;
-    grid-row: 5/6; */
-    /* writing-mode: vertical-rl;
-    text-orientation: sideways; */
-    grid-column: 3/4;
-    grid-row: 3/4;
-    align-self: end;
-    justify-self: end;
-  }
 /*======================
   
   ========================*/
@@ -392,6 +403,7 @@ body {
 }
 a, li {
   text-decoration:none;
+  color: var(--clr-accent);
 }
 *,
 *::before,

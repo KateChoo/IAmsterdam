@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175042112-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-175042112-2');
+    </script>       
     <meta charset="utf-8">
     <title> I amsterdam. </title>
     <link rel="stylesheet" href="https://github.com/necolas/normalize.css.git">
@@ -19,8 +28,8 @@
                 <span>I</span> <span id="am">am</span>sterdam.
             </h1>
             </a>
-            <a class="header__footer" href="https://katechoo.github.io/" target="_blank">
-                2020 &copy;Ｋ
+            <a class="header__footer" href="#" target="">
+                2020 Ｋ
             </a>
         </header>
         <section class="section__nav">
@@ -54,50 +63,52 @@
         <section id="section2" class="section__tab-group">
             <h1 class="section__title">Useful Amsterdam Blog</h1>
             <div class="section__content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, non?</p>
-            </div>
-            
-            <div class="section__tab">
-            <input id="tab-1" type="radio">
-            <label for="tab-1"><span>I Amsterdam:</span></label>
-            <div class="section__tab-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam quidem id <a href="">numquam</a>tempora dignissimos, necessitatibus laborum veritatis atque aliquid.</p>
-            </div>
-            </div>
-            
-            <div class="section__tab">
-            <input id="tab-2" type="radio">
-            <label for="tab-2"><span>Stuff Dutch People Like:</span></label>
-            <div class="section__tab-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ratione cumque optio debitis delectus aut, maxime voluptatibus quibusdam. Cupiditate, labore!</p>
-            </div>
+                <p>Blogs and contents are recommanded by <a href="https://www.iamsterdam.com/en/see-and-do/whats-on/i-amsterdam-magazine">I amsterdam Magazine Spring 2020.</a></p>
             </div>
 
-            <div class="section__tab">
-            <input id="tab-3" type="radio">
-            <label for="tab-3"><span>Amsterdam Foodie:</span></label>
-            <div class="section__tab-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptas assumenda beatae optio, quisquam maxime saepe nam!</p>
-            </div>
-            </div>
+            <div class="section__tab-group">
+                <div class="section__tab">
+                    <input id="tab-1" type="radio" name="tabs">
+                    <label for="tab-1"><span>I Amsterdam:</span></label>
+                        <div class="section__tab-content">
+                            <p><a href="https://blog.iamsterdam.com/en">https://blog.iamsterdam.com/en</a><br>A sideways look at life in the city for visitors and locals.</p>
+                        </div>
+                </div>
+                
+                <div class="section__tab">
+                    <input id="tab-2" type="radio" name="tabs">
+                    <label for="tab-2"><span>Stuff Dutch People Like:</span></label>
+                        <div class="section__tab-content">
+                            <p><a href="https://stuffdutchpeoplelike.com/">https://stuffdutchpeoplelike.com/</a><br>A study of all things Orange.</p>
+                        </div>
+                </div>
 
-            <div class="section__tab">
-            <input id="tab-4" type="radio">
-            <label for="tab-4"><span>Awesome Amsterdam:</span></label>
-            <div class="section__tab-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus, odio quos nisi ea eveniet architecto eos, doloremque vero placeat voluptates iure laudantium, totam a?</p>
-            </div>
-            </div>
+                <div class="section__tab">
+                    <input id="tab-3" type="radio" name="tabs">
+                    <label for="tab-3"><span>Amsterdam Foodie:</span></label>
+                        <div class="section__tab-content">
+                            <p><a href="https://www.amsterdamfoodie.nl/">https://www.amsterdamfoodie.nl/</a><br>Restaurant reviews, culinary guides and foodie travels.</p>
+                        </div>
+                </div>
 
-            <div class="section__tab">
-            <input id="tab-5" type="radio">
-            <label for="tab-5"><span>Spotted By locals:</span></label>
-            <div class="section__tab-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta veritatis, repellendus quo illo tempore.</p>
+                <div class="section__tab">
+                    <input id="tab-4" type="radio" name="tabs">
+                    <label for="tab-4"><span>Awesome Amsterdam:</span></label>
+                        <div class="section__tab-content">
+                            <p><a href="https://awesomeamsterdam.com/">https://awesomeamsterdam.com/</a><br>Personal tips and info on events, dining and culture.</p>
+                        </div>
+                </div>
+
+                <div class="section__tab">
+                    <input id="tab-5" type="radio" name="tabs">
+                    <label for="tab-5"><span>Spotted By locals:</span></label>
+                        <div class="section__tab-content">
+                            <p><a href="https://www.spottedbylocals.com/amsterdam">https://www.spottedbylocals.com/amsterdam</a><br>Online city guide and app.</p>
+                        </div>
+                </div>
             </div>
-            </div>
-            <a class="section2__footer" href="https://katechoo.github.io/" target="_blank">
-                2020 &copy;Ｋ
+            <a class="section2__footer" href="https://www.iamsterdam.com/en/see-and-do/whats-on/i-amsterdam-magazine" target="_blank">
+                 &copy;I amsterdam Magazine Spring 2020 
             </a>
         </section>
 <!--======================
@@ -107,21 +118,25 @@
             <h1 class="daytrip__title">A Day Trip To Giethoorn</h1>
             <div class="flex">
             <h3 class="daytrip__date">August 9th, 2020</h3>
-            <h3 class="daytrip__name"><a class="section3__footer" href="https://katechoo.github.io/" target="_blank">K Choo</a></h3>
+            <h3 class="daytrip__name"><a class="section3__footer" href="https://kchoo.com/" target="_blank">K Choo</a></h3>
             </div>
             <img class="giethoorn" src="giethoorn.JPG" alt="Giethoorn">
+            <span class="pCredit">Picture Credit: K Choo</span>
             <div class="wrap">
                 <!--   <div class="wrap2"> -->
-                <blockquote class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis fringilla dolor, a sollicitudin turpis posuere elementum."</blockquote>
-                <p class="one">Spring has sprung! In this tremendous blog article we're going to cover some points. This is where I'm telling you that what I'm going to tell you. Then I'm going to tell you those things. Then, because your special, and I'm to tell you what I told you.</p>
-                <p class="two">That quote was from the famous latin composer... nope, just kidding. Emmet generated it because that's a feature that it has. In the next section, we're really going to get into the meat of this blog post. </p>
-                <p class="three">Nunc ornare ante id sapien ullamcorper sollicitudin. Vestibulum vel odio sapien. Nam quis est maximus, cursus nibh at, dictum lorem. Donec vestibulum quam quis lorem egestas semper. Nullam et congue libero, a ultricies urna. Vivamus sed efficitur nisl. Fusce dapibus, lectus vel laoreet mattis, quam tellus fermentum diam, et luctus sem tortor in lorem. Nunc interdum ipsum ligula. Pellentesque sed diam erat.</p>
-                <p class="four">Aliquam porta metus nec erat ullamcorper accumsan. Etiam egestas sit amet ante vitae lacinia. Donec ultricies eu nisl vel mattis. Suspendisse vestibulum sed velit lacinia imperdiet. Vivamus in nibh ullamcorper, laoreet arcu ut, gravida nulla. Curabitur in diam tempus, cursus mauris a, posuere tellus. Pellentesque purus orci, commodo non ex eu, porttitor sagittis erat. Vestibulum at orci nec turpis pharetra imperdiet quis ut urna. Donec eget accumsan tortor. In interdum mauris at velit gravida, in euismod lacus sodales. Curabitur pellentesque nunc nulla, id convallis enim eleifend vel.</p>
-                <p class="five">Vivamus mollis fringilla dolor, a sollicitudin turpis posuere elementum. Quisque risus dolor, rhoncus sed imperdiet vel, tristique ac nisi. Sed dapibus aliquam nibh, at posuere dolor lobortis ac. Nam quis urna ac magna facilisis blandit. Maecenas vel arcu nec ipsum venenatis malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam semper ac sem at interdum. Ut massa est, egestas id sem at, commodo consequat velit.</p>
-                <p class="six">In a pellentesque eros. Morbi elementum venenatis est quis cursus. Nunc vitae mi maximus, volutpat enim nec, ultricies libero. Donec pharetra dui arcu, vel sagittis dolor scelerisque nec!</p>
+                <blockquote class="quote">"Giethoorn is a heaven on Earth."</blockquote>
+                <p class="one">The Netherlands is a country with canals, bikes, and Schiphol (one of the busiest airport in the world). Yes, it's all covered. It means Giethoorn is just a ticket away. <br><a href="#">How to get to Giethoorn.</a></p>
+                <!-- <img class="giethouse" src="giethouse.JPG" alt="Giethoorn"> -->
+                <img class="gietriver" src="gietriver.JPG" alt="Giethoorn">
+                <!-- <p class="two"></p> -->
+                <!-- <p class="four"></p> -->
+                <!-- <p class="five"></p> -->
+                <p class="six">It's so exclusive and eveything is hidden inside those cute houses. Spend the night in this heavenly little land with honey and milk. <br> <a href="#">Stay in Giethoorn.</a></p>
+                <img class="gietdog" src="gietdog.JPG" alt="Giethoorn">
+                <span class="gietdog">It's a dog house!!!</span>
                 <!--    </div> -->
-                <footer><a href="https://katechoo.github.io/" target="_blank">
-                    2020 &copy;Ｋ All Rights Reserved.
+                <footer><a href="https://kchoo.com/" target="_blank">
+                    2020 &copy;Ｋ
                 </a></footer>
             </div>
             <!-- <footer><a href="https://katechoo.github.io/" target="_blank">
