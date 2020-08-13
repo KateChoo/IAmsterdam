@@ -305,20 +305,6 @@ text-decoration: none;
   grid-row: 2/3;
 }
 
-/* @-moz-document url-prefix() {  
-  .one:first-letter {
-    margin-top: -5%;
-  }
-}
-.one:first-letter, x:-moz-margin-top, x:default {
-  margin: -5%;
-} */
-
-/* @-moz-keyframes fix {
-  from { padding-top: -6%; } 
-  to { padding-top: -10%; } 
-} */
-
 .firstletter {
   float: left;
   font-size: 80px;
